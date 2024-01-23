@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+  <div class="flex justify-center">
+    <div class="p-10">
+        <h1 class="text-2xl text-indigo-600">Add Post</h1>
+        <div class="bg-indigo-600 w-5 h-1 rounded-full"></div>
+    </div>
+  </div>
+  <div class="flex justify-center">
+    <form action="/add" method="POST">
+        <div class="flex gap-3">
+            <label for="title" class="text-indigo-600">Title :</label>
+            <input type="text" id="title" name="title" required class="border border-indigo-600 text-zinc-500 rounded-md pl-2">
+        </div>
+        <br>
+        <div class="flex gap-3">
+            <label for="image" class="text-indigo-600">Image URL :</label>
+            <input type="text" id="image" name="image" required class="border border-indigo-600 text-zinc-500 rounded-md pl-2">
+        </div>
+        <br>
+        <div class="flex gap-3">
+            <label for="content" class="text-indigo-600">Content :</label>
+            <textarea id="content" name="content" required class="border border-indigo-600 text-zinc-500 rounded-md pl-2"></textarea>
+        </div>
+        <div class="pt-5">
+            <button type="submit" class="bg-blue-500 px-5 text-white rounded-md shadow-md">Add Post</button>
+        </div>
+      </form>
+  </div>
+  <div class="flex justify-center p-5">
+    <a href="/" class="bg-rose-500 text-white px-5 rounded-md shadow-md">Back to Home</a>
+  </div>
+</body>
+</html>
